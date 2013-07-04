@@ -56,7 +56,7 @@ class JasmineCoverage < Tilt::Template
 
 end
 
-if ENV['COVERAGE'] == 'true' and defined?(Rails)
+if ENV['COVERAGE'] and defined?(Rails)
 
   # Guard::Jasmine engine to register coverage instrumented
   # Jasmine spec files.
